@@ -1,0 +1,45 @@
+/*
+ * Define the navigation styles.
+ */
+
+.nav {
+  padding: 2em 0 0.5em;
+  align-items: center;
+}
+
+.nav__brand {
+  flex: 1 1 0;
+  align-self: flex-start;
+
+  svg {
+    height: auto;
+    width: 114px;
+  }
+}
+
+.hero__employer--steelseries {
+  svg {
+    fill: $black;
+  }
+}
+
+.nav__list {
+  flex: 1 1 0;
+  margin: -35px 0 0;
+  padding: 0;
+  text-align: right;
+}
+
+.nav__list-item {
+  display: inline-block;
+  padding: 0 40px;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+  transition: color 250ms ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-light;
+  }
+}

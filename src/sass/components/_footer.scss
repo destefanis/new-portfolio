@@ -1,0 +1,39 @@
+/*
+ * Define the footer styles.
+ */
+
+
+.footer {
+  padding: 4em 0 6em;
+
+  @include min($tablet) {
+    padding: 6em 0 8em
+  }
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.social-list__item {
+  display: block;
+  margin: 0 0 10px 0;
+  list-style: none;
+
+  @include min($tablet) {
+    display: inline-block;
+    margin: 0 40px 0 0;
+  }
+}
+
+.social-list__item-link {
+  transition: color 250ms ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-light;
+  }
+}

@@ -1,0 +1,52 @@
+// FONT
+
+html {
+  // 1rem = 10px
+  font-size: 10px;
+}
+
+body {
+  font-family: $sans;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: $black;
+}
+
+// LAYOUT
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100% - 2 * $site-gutter;
+  max-width: $site-width;
+  margin-right: auto;
+  margin-left: auto;
+
+  &.container--vertically-center {
+    align-items: center;
+  }
+
+  &.container--wrap {
+    flex-wrap: wrap;;
+  }
+}
+
+.column {
+  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+section:nth-of-type(5) .column:first-of-type {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 22px;
+}
+
+section:nth-of-type(6) .column:nth-of-type(2) {
+  flex-grow: 4;
+  flex-shrink: 4;
+  flex-basis: 66px;
+}

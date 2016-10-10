@@ -1,0 +1,63 @@
+/*
+ * Define the hero styles.
+ */
+
+
+.hero__title {
+  position: relative;
+  max-width: 900px;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  line-height: 68px;
+  font-size: 3.8rem;
+  font-weight: 300;
+
+  @include min($tablet) {
+    margin-top: 1.25em;
+    margin-bottom: 2.5em;
+    font-size: $h1-font-size;
+  }
+}
+
+.hero__link {
+  color: $primary-light;
+  transition: color 250ms ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #666;
+  }
+}
+
+.hero__link--second {
+  color: $primary-dark;
+  transition: color 250ms ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #666;
+  }
+}
+
+.hero__employer {
+  flex: 1 1 0;
+  margin-bottom: 2em;
+
+  @include min($tablet) {
+    margin-bottom: 0;
+  }
+
+  svg {
+    height: auto;
+    width: 200px;
+  }
+}
+
+.employer__label {
+  margin-bottom: 1em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}

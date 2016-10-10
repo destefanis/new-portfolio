@@ -1,0 +1,99 @@
+/*
+ * Work 
+ */
+
+.work {
+  margin-top: 2em;
+  padding: 4em 0 4em;
+  background: $grey;
+
+  @include min($tablet) {
+    margin-top: 4em;
+    padding: 8em 0 8em;
+  }
+}
+
+.secondary-header {
+  margin-bottom: 0.5em;
+  font-size: 3.4rem;
+  font-weight: 300;
+
+  @include min($tablet) {
+    font-size: $h2-font-size;
+  }
+}
+
+.work-title {
+  color: $primary-light;
+  letter-spacing: 1px;
+  font-size: 2.6rem;
+}
+
+.work__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.work__list-item {
+  display: block;
+  padding: 18px 0 18px;
+  border-bottom: 1px solid #666;
+  list-style: none;
+  transition: all 250ms ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+
+    .work-title {
+      color: $primary-dark;
+    }
+  }
+}
+
+.work__list-item-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.work-title {
+  margin-bottom: 0;
+  line-height: 1.2;
+  flex: 3 1 100%;
+  transition: all 250ms ease;
+}
+
+.work-detail {
+  color: #666;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.work-role {
+  flex: 3 1 100%;
+
+  @include min($tablet) {
+    flex: 1 1 60%;
+  }
+}
+
+.work-company {
+  flex: 1 1 100%;
+
+  @include min($tablet) {
+    flex: 1 1 20%;
+  }
+}
+
+.work-date {
+  flex: 1 1 100%;
+
+  @include min($tablet) {
+    flex: 1 1 20%;
+    align-self: flex-end;
+    text-align: right;
+  }
+}
