@@ -42,10 +42,10 @@
 }
 
 .hero__employer {
-  flex: 1 1 0;
   margin-bottom: 2em;
 
   @include min($tablet) {
+    flex: 1 1 0;
     margin-bottom: 0;
   }
 
