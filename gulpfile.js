@@ -18,6 +18,7 @@ const babel    = require('rollup-plugin-babel')
 const commonjs = require('rollup-plugin-commonjs')
 const resolve  = require('rollup-plugin-node-resolve')
 const uglify   = require('rollup-plugin-uglify')
+const rucksack = require('rucksack-css')
 
 // error handler
 
@@ -48,6 +49,7 @@ gulp.task('html', ['images'], () => {
 // sass
 
 const processors = [
+  rucksack({ inputPseudo: false, quantityQueries: false }),
   prefixer({ browsers: 'last 2 versions' }),
   cssnano({ safe: true })
 ]
@@ -99,7 +101,7 @@ gulp.task('images', () => {
   return gulp.src('src/images/**/*.{gif,jpg,png,svg}')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(changed('dist/images'))
-    .pipe(imagemin({ progressive: true, interlaced: true }))
+    // .pipe(imagemin({ progressive: true, interlaced: true }))
     .pipe(gulp.dest('dist/images'))
 })
 

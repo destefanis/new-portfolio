@@ -14,6 +14,13 @@
   svg {
     height: auto;
     width: 114px;
+    overflow: visible;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
   }
 }
 
@@ -41,5 +48,129 @@
   &:focus,
   &:active {
     color: $primary-light;
+  }
+}
+
+// SVG Logo Classes and animation
+.logo-circle,
+.logo-triangle,
+.logo-letter,
+.logo-shadow {
+  animation-fill-mode: forwards;
+  will-change: transform;
+}
+
+.logo-circle {
+  transform-origin: center;
+  transform: scale(0.5);
+  animation-name: bubble;
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+}
+
+.logo-triangle {
+  transform: translate(16px, -40px);
+  transform-origin: right;
+  opacity: 0;
+  animation-name: pointReveal;
+  animation-duration: 400ms;
+  animation-delay: 400ms;
+  animation-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+}
+
+.logo-letter {
+  opacity: 0;
+  fill: $logo-light-green;
+  animation-name: colorReveal;
+  animation-duration: 450ms;
+  animation-delay: 800ms;
+}
+
+.logo-shadow {
+  transform-origin: 10% 10%;
+  transform: scale(0);
+  opacity: 0;
+  fill: $logo-light-green;
+  animation-name: shadowReveal;
+  animation-duration: 650ms;
+  animation-delay: 700ms;
+  animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+@keyframes colorReveal {
+  0% {
+    transform: translateY(45px);
+    opacity: 1;
+    fill: $logo-dark-green;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    fill: #fff;
+  }
+}
+
+@keyframes pointReveal {
+  0% {
+    transform: translate(16px, -40px);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shadowReveal {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    fill: $logo-light-green;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    fill: $logo-dark-green;
+  }
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(0.5);
+  }
+
+  65% {
+    transform: scale(1.15);
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  85% {
+    transform: scale(1.05);
+  }
+
+  90% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }

@@ -1,5 +1,4 @@
-const main = () => {
+(function ($) {
+  'use strict'
 
-}
-
-document.addEventListener('DOMContentLoaded', main)
+})(jQuery);
