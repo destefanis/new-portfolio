@@ -11,6 +11,10 @@
   flex: 1 1 0;
   align-self: flex-start;
 
+  a {
+    display: inline-block;
+  }
+
   svg {
     height: auto;
     width: 114px;
@@ -80,7 +84,7 @@
 
 .logo-letter {
   opacity: 0;
-  fill: $logo-light-green;
+  fill: $white;
   animation-name: colorReveal;
   animation-duration: 450ms;
   animation-delay: 800ms;
@@ -90,7 +94,7 @@
   transform-origin: 10% 10%;
   transform: scale(0);
   opacity: 0;
-  fill: $logo-light-green;
+  fill: $logo-dark-green;
   animation-name: shadowReveal;
   animation-duration: 650ms;
   animation-delay: 700ms;
