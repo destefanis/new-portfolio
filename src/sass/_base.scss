@@ -11,13 +11,14 @@ body {
   font-size: 1.6rem;
   line-height: 1.8;
   color: $black;
+  -webkit-font-smoothing: antialiased;
 }
 
 // LAYOUT
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   width: 100% - 2 * $site-gutter;
   max-width: $site-width;
   margin-right: auto;

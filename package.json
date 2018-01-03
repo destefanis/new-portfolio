@@ -4,7 +4,6 @@
   "description": "",
   "author": "",
   "license": "",
-
   "devDependencies": {
     "autoprefixer": "^6.5.3",
     "babel-core": "^6.20.0",
