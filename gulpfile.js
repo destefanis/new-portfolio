@@ -36,12 +36,19 @@ const onError = function(error) {
 
 gulp.task('clean', () => del('dist'))
 
+gulp.task('html-includes', () => {
+  return gulp.src('src/html/includes/**/*.html')
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
+    .pipe(gulp.dest('dist/includes'))
+})
+
 // html
 
 gulp.task('html', ['images'], () => {
   return gulp.src('src/html/**/*.html')
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(include({ prefix: '@', basepath: 'dist/images/' }))
+    .pipe(include({ prefix: '@', basepath: 'dist/' }))
     .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
     .pipe(gulp.dest('dist'))
 })
@@ -179,7 +186,7 @@ gulp.task('build', ['clean'], () => {
   fs.mkdirSync('dist/maps')
 
   // run the tasks
-  gulp.start('html', 'sass', 'js', 'images', 'fonts', 'videos', 'favicon')
+  gulp.start('html-includes', 'html', 'sass', 'js', 'images', 'fonts', 'videos', 'favicon')
 })
 
 gulp.task('default', ['build', 'server', 'watch'])

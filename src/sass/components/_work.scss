@@ -2,10 +2,27 @@
  * Work 
  */
 
+.featured-work-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 100%;
+  padding-bottom: 4em;
+
+  @include min($tablet) {
+    padding-bottom: 8em;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .work-link {
   display: inline-block;
   padding: 15px;
   flex: 0 0 100%;
+
+  &.work-link--50 {
+    flex: 0 0 50%;
+  }
 
   &.work-link--46 {
     flex: 0 0 46%;
@@ -25,33 +42,32 @@
 }
 
 .work-link-image {
+  display: block;
   width: 100%;
   height: auto;
 }
 
+.work-link-content {
+  display: none;
+  position: relative;
+  z-index: 10;
+  border-radius: 4px;
+  width: 80%;
+  // margin: -50px auto 30px;
+  background: $white;
+  // box-shadow: 0 6px 12px rgba($black, 0.11);
+  padding: 25px;
+}
+
 .link-content__header {
+  text-align: center;
   margin-bottom: 0;
-  color: $primary-text;
+  color: $black;
   letter-spacing: 0;
   line-height: 1.2;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-weight: 400;
   transition: color 300ms ease;
-}
-
-.work-link-content {
-  padding: 25px 0 25px;
-}
-
-.featured-work-container {
-  display: flex;
-  flex-flow: row wrap;
-  flex: 1 1 100%;
-  padding-bottom: 4em;
-
-  @include min($tablet) {
-    padding-bottom: 8em;
-  }
 }
 
 .work {
