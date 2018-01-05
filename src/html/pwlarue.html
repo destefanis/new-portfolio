@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <title>P.W. LaRue Co. | Daniel Destefanis</title>
+    @include("includes/_head.html")
+  </head>
+  <body class="main">
+    
+    @include("includes/_navigation.html")
+
+    <section>
+      <div class="container">
+        <div class="project-hero" style="">
+          <header class="hero-header">
+            <h1 class="project-label">P.W. LaRue Co. Shop</h1>
+            <h2 class="project-title">A clean and minimal webshop with an emphasis on the products.</h2>
+          </header>
+        </div>
+        <div class="inline-image">
+          <img src="images/pwlarue/front-page.jpg">
+        </div>
+      </div>
+      <div class="project-intro">
+        <div class="container">
+          <div class="lede-content">
+            <p class="project-label">
+              About P.W. LaRue Co.
+            </p>
+            <p class="lede">
+              A local Chicago craftsman, and close friend of mine, approached me this year with the idea of launching on online storefront for his handmade leather and canvas goods. Excited at the prospect of a design/dev project so removed from the products we sell at SteelSeries, I set off to build him an e-commerce site worthy enough to represent his beautiful products.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="project-step">
+        <div class="container">
+          <div class="inline-image">
+            <img src="images/pwlarue/product-page.jpg">
+          </div>
+          <div class="step-content">
+            <p class="step-body">
+              For product pages, we wanted to put all the emphasis on the product itself and keep the design as clean and minimal as possible. Each color variant actually has it's own page, but is still accessible from its siblings.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="project-step">
+        <div class="container">
+          <div class="inline-image">
+            <img src="images/pwlarue/shop-page.jpg">
+          </div>
+          <div class="step-content">
+            <p class="step-body">
+              The entire site/shop is a custom Wordpress theme built on <a href="https://github.com/timber/timber">Timber</a>, so I could utilize TWIG for templating. For the ecommerce backend, the theme uses <a href="https://woocommerce.com/">WooCommerce</a> so we could avoid monthly fees like with other services. Finally, for the admin side, the theme uses <a href="https://www.advancedcustomfields.com/">Advanced Custom Fields</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="project-step">
+        <div class="container">
+          <div class="inline-image">
+            <img src="images/pwlarue/about-page.jpg">
+          </div>
+          <div class="step-content">
+            <p class="step-body">
+              Make sure to checkout out the site (and maybe treat yourself). Or take a look at the code on <a href="https://github.com/destefanis/pwlarue">Github</a>.
+
+              <a class="project-button" href="https://pwlarue.com">
+                Visit The Site
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-links">
+        <a class="project-link project-link--first" href="/engine.html">
+          <span class="project-link__text">Previous Project</span>
+        </a>
+        <a class="project-link project-link--last" href="/destiny.html">
+          <span class="project-link__text">Next Project</span>
+        </a>
+      </div>
+    </section>
+
+    @include("includes/_footer.html")
+
+    @include("includes/_scripts.html")
+  </body>
+</html>

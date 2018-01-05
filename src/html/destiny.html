@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <title>Destiny Medals | Daniel Destefanis</title>
+    @include("includes/_head.html")
+  </head>
+  <body class="main">
+    
+    @include("includes/_navigation.html")
+
+    <section>
+      <div class="container">
+        <div class="project-hero" style="">
+          <header class="hero-header">
+            <h1 class="project-label">Destiny Medals</h1>
+            <h2 class="project-title">A react web app for reliving sweet multiplayer carnage in Destiny 2.</h2>
+          </header>
+        </div>
+        <div class="inline-image">
+          <img src="images/destiny/match-history.jpg">
+        </div>
+      </div>
+      <div class="project-intro">
+        <div class="container">
+          <div class="lede-content">
+            <p class="project-label">
+              About Destiny Medals
+            </p>
+            <p class="lede">
+              I've been a fan of the game developer <a href="https://www.bungie.net/">Bungie</a> since they released Halo Combat Evolved on Xbox in 2001. When I realized their newest release, Destiny 2, had a public API I knew I had to build ...something. Enter Destiny Medals, a site built with <a href="https://reactjs.org/">react.js</a> that pulls in your multiplayer history, match stats, and if you couldn't tell, displays the medals you earned in that match.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="project-step">
+        <div class="container">
+          <div class="inline-image">
+            <img src="images/destiny/login-select-screens.jpg">
+          </div>
+          <div class="step-content">
+            <p data-height="400" data-theme-id="0" data-slug-hash="YxmEBj" data-default-tab="html,result" data-user="destefanis" data-embed-version="2" data-pen-title="Destiny Ghost Preloader Animation" class="codepen">See the Pen <a href="https://codepen.io/destefanis/pen/YxmEBj/">Destiny Ghost Preloader Animation</a> by Daniel Destefanis (<a href="https://codepen.io/destefanis">@destefanis</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            <p class="step-body">
+              The idea for the webapp came to me as I was working on this fun animation embedded above of a character from the game. The goal was to build something a user and their friends could dig through while they wait for their next match to start. The player vs player history in Destiny 2 only goes back one match, so if you had a great game earlier in the night, you had no way of finding that information.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="project-step">
+        <div class="container">
+          <div class="inline-image">
+            <img src="images/destiny/match-stats-tab.jpg">
+          </div>
+          <div class="step-content">
+            <p class="step-body">
+              Medals are fun accolades you earn as a player during a multiplayer match. These are awarded for skillful plays or notable moments. Although the Destiny 2 API returns medal information, the definition for that data was incomplete. To solve this, a few community members and myself put together a google doc list of the missing information. I then added updated the original JSON file with the completed information for other community developers to use.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="project-step">
+        <div class="container">
+          <div class="inline-image">
+            <img src="images/destiny/match-scoreboard-tab.jpg">
+          </div>
+          <div class="step-content">
+            <p class="step-body">
+              The match cards returned by the app also display a scoreboard in a second tab. Destiny Medals is fully responsive and the code is open source. The webapp will be officially launched by the end of January 2018. In the mean time feel free to take a <a href="https://github.com/destefanis/destiny-medals">look at the code on Github</a> or visit the live Beta currently hosted on github pages.
+
+              <a class="project-button" href="https://destefanis.github.io/destiny-medals/dist/index.html#/character/activity?platform=4&membershipId=4611686018467295916&characterId=2305843009300377669">
+                Visit The Site
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-links">
+        <a class="project-link project-link--first" href="/pwlarue.html">
+          <span class="project-link__text">Previous Project</span>
+        </a>
+        <a class="project-link project-link--last" href="/steelseries.html">
+          <span class="project-link__text">Next Project</span>
+        </a>
+      </div>
+    </section>
+
+    @include("includes/_footer.html")
+
+    @include("includes/_scripts.html")
+  </body>
+</html>

@@ -21,23 +21,23 @@
   flex: 0 0 100%;
 
   &.work-link--50 {
-    flex: 0 0 50%;
-  }
+    flex: 1 1 100%;
 
-  &.work-link--46 {
-    flex: 0 0 46%;
+    @include min($tablet) {
+      flex: 0 0 50%;      
+    }
   }
+}
 
-  &.work-link--47 {
-    flex: 0 0 47%;
-  }
+.work-link-wrapper {
+  transition: all 200ms ease;
+  transform: translateY(0);
+  background: transparent;
+  box-shadow: 0 0 0 rgba($black, 0);
 
-  &.work-link--53 {
-    flex: 0 0 53%;
-  }
-
-  &.work-link--54 {
-    flex: 0 0 54%;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 14px rgba($black, 0.1);
   }
 }
 
@@ -48,14 +48,11 @@
 }
 
 .work-link-content {
-  display: none;
   position: relative;
   z-index: 10;
   border-radius: 4px;
-  width: 80%;
-  // margin: -50px auto 30px;
+  width: 100%;
   background: $white;
-  // box-shadow: 0 6px 12px rgba($black, 0.11);
   padding: 25px;
 }
 
@@ -65,9 +62,13 @@
   color: $black;
   letter-spacing: 0;
   line-height: 1.2;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
   transition: color 300ms ease;
+
+  @include min($tablet) {
+    font-size: 2.4rem;      
+  }
 }
 
 .work {
@@ -85,7 +86,7 @@
   display: flex;
   flex: 1 1 100%;
   margin-bottom: 0.5em;
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: 300;
 
   @include min($tablet) {

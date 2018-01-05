@@ -1,0 +1,57 @@
+/*
+ * Navigation at the bottom of project pages.
+ */
+
+.project-links {
+  margin-top: 3em;
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  justify-content: center;
+
+  @include min($tablet) {
+    margin-top: 7em;
+  }
+}
+
+.project-link {
+  display: flex;
+  flex: 1 1 50%;
+  height: 200px;
+  color: $white;
+  letter-spacing: 0;
+  font-size: 2rem;
+  align-content: center;
+  justify-content: center;
+  transition: background 300ms ease-in-out;
+
+  @include min($tablet) {
+    height: 400px;
+    font-size: 2.8rem;
+  }
+
+  &.project-link--first {
+    padding-left: 5%;
+    justify-content: flex-start;
+    background: $primary-text;
+
+    &:hover {
+      background: $red;
+    }
+  }
+
+  &.project-link--last {
+    background: $primary-light;
+    padding-right: 5%;
+    justify-content: flex-end;
+
+    &:hover {
+      background: $red;
+    }
+  }
+}
+
+.project-link__text {
+  margin-top: auto;
+  margin-bottom: auto;
+}

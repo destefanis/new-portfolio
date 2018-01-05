@@ -36,9 +36,13 @@
 
 .nav__list {
   flex: 1 1 0;
-  margin: -35px 0 0;
+  margin: 0;
   padding: 0;
   text-align: right;
+
+  @include min($tablet) {
+    margin: -20px 0 0;
+  }
 }
 
 .nav__list-item {

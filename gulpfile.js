@@ -108,7 +108,7 @@ gulp.task('images', () => {
   return gulp.src('src/images/**/*.{gif,jpg,png,svg}')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(changed('dist/images'))
-    // .pipe(imagemin({ progressive: true, interlaced: true }))
+    .pipe(imagemin({ progressive: true, interlaced: true }))
     .pipe(gulp.dest('dist/images'))
 })
 

@@ -2,19 +2,20 @@
  * Define the hero styles.
  */
 
-
 .hero__title {
   position: relative;
-  max-width: 900px;
+  max-width: 840px;
   margin-top: 0.5em;
   margin-bottom: 1.5em;
-  line-height: 68px;
-  font-size: 3.8rem;
+  letter-spacing: -0.5px;
+  line-height: 1.7;
+  font-size: 3rem;
   font-weight: 300;
 
   @include min($tablet) {
     margin-top: 1.25em;
     margin-bottom: 2.5em;
+    line-height: 68px;
     font-size: $h1-font-size;
   }
 }
@@ -26,7 +27,7 @@
   &:hover,
   &:focus,
   &:active {
-    color: #666;
+    color: $black;
   }
 }
 
@@ -37,7 +38,7 @@
   &:hover,
   &:focus,
   &:active {
-    color: #666;
+    color: $black;
   }
 }
 

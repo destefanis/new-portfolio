@@ -1,3 +1,6 @@
+/*
+ * Project page styles.
+ */
 
 .project {
   padding-bottom: 8em;
@@ -7,12 +10,16 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  height: 300px;
-  // background: linear-gradient(90deg, $primary-text, $primary-dark);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 340px;
+  width: 100%;
+  margin-bottom: 3em;
 }
 
 .hero-header {
-  margin-top: auto;
+  margin: auto 5% auto 0;
   max-width: 640px;
 }
 
@@ -25,36 +32,112 @@
 }
 
 .project-title {
-  letter-spacing: -0.5px;
-  line-height: 68px;
-  font-size: 3.8rem;
-  font-weight: 300;
+  letter-spacing: -1.5px;
+  line-height: 1.7;
+  font-size: 2.8rem;
+  font-weight: 400;
+
+  @include min($tablet) {
+    font-size: 3.8rem;
+  }
 }
 
 .project-intro {
-  margin-top: 8em;
-  padding: 8em 0;
-  background: $grey;
+  padding: 3em 0 2em;
+  background: $white;
+
+  @include min($tablet) {
+    padding: 7em 0 4em;
+  }
 }
 
 .lede-content {
   margin: auto;
   max-width: 640px;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   letter-spacing: -0.5px;
+
+  &.lede-content--wide {
+    max-width: 740px;
+  }
 }
 
 .lede {
-  // letter-spacing: -0.5px;
+  line-height: 1.7;
+  font-size: 1.8rem;
+
+  @include min($tablet) {
+    font-size: 2.2rem;
+  }
+
+  a {
+    color: $primary-text;
+  }
 }
 
 .lede-list {
-  margin-top: 1.5em;
-  margin-left: 1em;
-  font-size: 2.2rem;
+  margin: 0;
+  padding: 15px 20px;
+  font-size: 1.8rem;
+
+  @include min($tablet) {
+    padding: 30px 40px;
+    font-size: 2.2rem;
+  }
+}
+
+.cp_embed_wrapper {
+  display: block;
+  margin-bottom: 3em;
 }
 
 .lede-list__item {
   margin-bottom: 1em;
   line-height: 1.6;
+}
+
+.project-step {
+  padding: 2em 0 0;
+  background: $white;
+  text-align: center;
+
+  @include min($tablet) {
+    padding: 4em 0 0;
+  }
+}
+
+.project-button {
+  display: block;
+  margin-top: 2em;
+  color: $primary-text;
+  transition: color 150ms ease-in-out;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.step-content {
+  padding: 2em 0 1em;
+  text-align: left;
+  max-width: 740px;
+  margin: auto;
+
+  @include min($tablet) {
+    padding: 8em 0 4em;
+  }
+}
+
+.step-body {
+  margin-bottom: 0.5em;
+  letter-spacing: -0.5px;
+  font-size: 1.6rem;
+
+  @include min($tablet) {
+    font-size: 2.2rem;
+  }
+
+  a {
+    color: $primary-text;
+  }
 }
