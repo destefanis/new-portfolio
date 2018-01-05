@@ -13,9 +13,16 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 340px;
   width: 100%;
   margin-bottom: 3em;
+
+  @include min($tablet) {
+    min-height: 340px;
+  }
+
+  @include min($xxlarge) {
+    margin-bottom: 0;
+  }
 }
 
 .hero-header {
@@ -96,48 +103,4 @@
   line-height: 1.6;
 }
 
-.project-step {
-  padding: 2em 0 0;
-  background: $white;
-  text-align: center;
 
-  @include min($tablet) {
-    padding: 4em 0 0;
-  }
-}
-
-.project-button {
-  display: block;
-  margin-top: 2em;
-  color: $primary-text;
-  transition: color 150ms ease-in-out;
-
-  &:hover {
-    color: $black;
-  }
-}
-
-.step-content {
-  padding: 2em 0 1em;
-  text-align: left;
-  max-width: 740px;
-  margin: auto;
-
-  @include min($tablet) {
-    padding: 8em 0 4em;
-  }
-}
-
-.step-body {
-  margin-bottom: 0.5em;
-  letter-spacing: -0.5px;
-  font-size: 1.6rem;
-
-  @include min($tablet) {
-    font-size: 2.2rem;
-  }
-
-  a {
-    color: $primary-text;
-  }
-}

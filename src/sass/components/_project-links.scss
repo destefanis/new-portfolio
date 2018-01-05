@@ -35,6 +35,11 @@
     justify-content: flex-start;
     background: $primary-text;
 
+    @include min($xxlarge) {
+      padding-left: 0;
+      justify-content: center;
+    }
+
     &:hover {
       background: $red;
     }
@@ -44,6 +49,11 @@
     background: $primary-light;
     padding-right: 5%;
     justify-content: flex-end;
+
+    @include min($xxlarge) {
+      padding-right: 0;
+      justify-content: center;
+    }
 
     &:hover {
       background: $red;
