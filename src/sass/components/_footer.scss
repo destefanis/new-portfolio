@@ -10,8 +10,12 @@
   }
 
   .secondary-header {
-    flex: 0 0 auto;
+    flex: 1 1 100%;
     display: inline-block;
+
+    @include min($tablet) {
+      flex: 0 0 auto;
+    }
   }
 
   .hero__link {
