@@ -50,6 +50,10 @@
     margin-bottom: 0;
   }
 
+  a {
+    display: inline-block;
+  }
+
   svg {
     height: auto;
     width: 200px;
@@ -60,6 +64,25 @@
       opacity: 0.9;
     }
   }
+}
+
+.ss-logo {
+  fill: $black;
+}
+
+.palantir-logo {
+  margin-top: 1rem;
+
+  @include min($tablet) {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+
+.discord-logo {
+  fill: $black;
+  position: relative;
+  top: -10px;
 }
 
 .employer__label {
