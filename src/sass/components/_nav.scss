@@ -3,8 +3,10 @@
  */
 
 .nav {
+  position: relative;
   padding: 2em 0 0.5em;
   align-items: center;
+  z-index: 10;
 }
 
 .nav__brand {

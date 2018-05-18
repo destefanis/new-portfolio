@@ -2,15 +2,22 @@
  * Define the hero styles.
  */
 
+.hero {
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+}
+
 .hero__title {
   position: relative;
   max-width: 840px;
   margin-top: 0.5em;
   margin-bottom: 1.5em;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
   line-height: 1.7;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
 
   @include min($tablet) {
     margin-top: 1.25em;
@@ -87,8 +94,75 @@
 
 .employer__label {
   margin-bottom: 1em;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
 }
+
+// .hero-background {
+//   position: absolute;
+//   z-index: 1;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   perspective: 1000px;
+// }
+
+// .rect {
+//   position: absolute;
+//   top: 40%;
+//   right: 10%;
+//   content: "";
+//   display: block;
+//   height: 300px;
+//   border-radius: 3px;
+//   width: 400px;
+//   background: $black;
+//   -webkit-backface-visibility: visible;
+//   backface-visibility: visible;
+//   perspective-origin: 150% 150%;
+//   transform-style: preserve-3d;
+//   transform: translateZ(50px) skew(-1deg);
+//   box-shadow: 0 9px 30px rgba(35,39,42, 0.1);
+//   opacity: 0.015;
+// }
+
+// .rect2 {
+//   position: absolute;
+//   top: 45%;
+//   right: 7%;
+//   content: "";
+//   display: block;
+//   height: 70px;
+//   border-radius: 3px;
+//   width: 40px;
+//   background: rgba(#60d6b9, 0.3);
+//   -webkit-backface-visibility: visible;
+//   backface-visibility: visible;
+//   perspective-origin: 150% 150%;
+//   transform-style: preserve-3d;
+//   transform: translateZ(5px) skew(0deg);
+//   box-shadow: 0 9px 30px rgba(35,39,42, 0.1);
+//   opacity: 1;
+// }
+
+// .rect3 {
+//   position: absolute;
+//   top: 60%;
+//   right: 11%;
+//   content: "";
+//   display: block;
+//   height: 120px;
+//   border-radius: 3px;
+//   width: 45px;
+//   background: rgba(#60d6b9, 0.3);
+//   -webkit-backface-visibility: visible;
+//   backface-visibility: visible;
+//   perspective-origin: 150% 150%;
+//   transform-style: preserve-3d;
+//   transform: translateZ(5px) skew(0deg);
+//   box-shadow: 0 9px 30px rgba(35,39,42, 0.1);
+//   opacity: 0.7;
+// }

@@ -86,8 +86,9 @@
   display: flex;
   flex: 1 1 100%;
   margin-bottom: 0.5em;
+  letter-spacing: -1px;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
 
   @include min($tablet) {
     font-size: $h2-font-size;
