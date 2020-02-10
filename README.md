@@ -6,11 +6,11 @@ Feel free to use this code as a jumping off point for your own portfolio, projec
 This is my previous portfolio so it's no longer hosted. View the link below for the example!
 
 ## Link
-https://destefanis.github.io/new-portfolio/dist/
-https://destefanis.github.io/new-portfolio/dist/destiny.html
-https://destefanis.github.io/new-portfolio/dist/steelseries.html
-https://destefanis.github.io/new-portfolio/dist/pwlarue.html
-https://destefanis.github.io/new-portfolio/dist/engine.html
+* https://destefanis.github.io/new-portfolio/dist/
+* https://destefanis.github.io/new-portfolio/dist/destiny.html
+* https://destefanis.github.io/new-portfolio/dist/steelseries.html
+* https://destefanis.github.io/new-portfolio/dist/pwlarue.html
+* https://destefanis.github.io/new-portfolio/dist/engine.html
 
 ## How to
 
