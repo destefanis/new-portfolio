@@ -3,6 +3,9 @@ Personal portfolio for Daniel Destefanis, built with <a href="https://github.com
 
 Feel free to use this code as a jumping off point for your own portfolio, project, or learning tool :)
 
+## Link
+https://destefanis.github.io/new-portfolio/dist/
+
 ## How to
 
 In order to use the environment, navigate to the project folder in your terminal and run the `gulp` command.
