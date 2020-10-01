@@ -1,7 +1,7 @@
 # new-portfolio
 Personal portfolio for Daniel Destefanis, built with <a href="https://github.com/callmecavs/outset">outset</a> boilerplate.
 
-Feel free to use this code as a jumping off point for your own portfolio, project, or learning tool :)
+Please feel free to use this code as a jumping off point for your own portfolio, project, or learning tool :)
 
 This is my previous portfolio so it's no longer hosted. View the link below for the example!
 
