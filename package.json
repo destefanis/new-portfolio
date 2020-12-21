@@ -22,7 +22,7 @@
     "gulp-postcss": "^6.2.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.9.1",
-    "node-notifier": "^4.6.1",
+    "node-notifier": "^8.0.1",
     "outset": "^4.2.0",
     "rollup": "^0.36.4",
     "rollup-plugin-babel": "^2.6.1",
